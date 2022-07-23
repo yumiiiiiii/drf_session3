@@ -59,4 +59,25 @@
   + 할 일 리스트 전체 조회
 + post
   + 할 일 생성(업로드)
-### 4. Todo
+### 4. TodoDetailView
++ pk 값으로 특정 할 일 받아오기
++ get 
+  + 특정 할 일 조회(+댓글)
++ delete
+  + 특정 할 일 삭제
++ put 
+  + 특정 할 일 수정
+### 5. TodoCommentView
++ get
+  + 댓글 전체 조회(+게시글)
++ post
+  + 댓글 작성
+  + 게시글 고유값으로 작성
+### 6. TodoCommentDetailView
++ get
+  + 특정 댓글 조회
+  + 댓글 고유값으로 조회
++ put 
+  + 특정 댓글 수정
++ delete
+  + 특정 댓글 
