@@ -143,12 +143,6 @@ class LoginView(APIView):
             return Response({'message':'로그인성공', 'data':serializer.data})
         return Response({'message':'로그인실패', 'error':serializer.errors})
 
-    def delete(selg, request):
-        serializer=UserLoginSerializer(data=request.data)
-
-        if serializer.is_valid():
-            return Response({'message':'로그아웃성공', 'data':serializer.data})
-        return Response({'message':'로그아웃실패', 'error':serializer.errors})
 
 class TodoView(APIView):
     def get(self, request, format=None):
@@ -170,6 +164,11 @@ class TodoDetailView(APIView):
         serializer=TodoSerializer(todo)
         return Response(serializer.data)
 
+    def delete(self, request, pk, format=None):
+        todo=get_object_or_404(Todo, pk=pk)
+        todo.delete()
+        return Response()
+    
     def put(self, request, pk, format=None):
         todo=get_object_or_404(Todo, pk=pk)
         serializer=TodoSerializer(todo, data=request.data)
@@ -177,6 +176,7 @@ class TodoDetailView(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors)
+    
 
 class TodoCommentView(APIView):
     def get(self, request, format=None):
