@@ -81,3 +81,13 @@
   + 특정 댓글 수정
 + delete
   + 특정 댓글 삭제
+
+----
+
+## URL
++ 'signup/' : 회원가입
++ 'login/' : 로그인
++ 'todo/' : 전체 할 일 조회, 할 일 작성
++ 'todo/<int:pk>/' : 특정 할 일 조회, 수정, 삭제
++ 'todocomments/' : 전체 댓글 조회, 댓글 작성
++ 'todocommnets/<int:pk>/' : 특정 댓글 조회, 수정, 삭제
