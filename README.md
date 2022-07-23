@@ -45,3 +45,18 @@
 + TODO(할 일 게시판) serializer
 + fields=['id','Todo_content','Todo_complete','Todo_created_at','Todo_comment']
 
+----
+
+## APIView
+### 1. SignupView
++ post
+  + 회원가입 기능
+### 2. LoginView
++ post
+  + 로그인 기능
+### 3. TodoView
++ get
+  + 할 일 리스트 전체 조회
++ post
+  + 할 일 생성(업로드)
+### 4. Todo
