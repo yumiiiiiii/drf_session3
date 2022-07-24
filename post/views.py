@@ -197,13 +197,6 @@ class TodoCommentDetailView(APIView):
         serializer=TodoCommentSerializer(comment)
         return Response(serializer.data)
 
-    def put(self, request, pk, format=None):
-        comment=get_object_or_404(TodoComment, pk=pk)
-        serializer=TodoCommentSerializer(comment, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response({"message":"댓글 수정 성공"})
-        return Response(serializer.errors)
 
     def delete(self, request, pk, format=None):
         comment=get_object_or_404(TodoComment, pk=pk)
