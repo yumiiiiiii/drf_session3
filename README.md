@@ -33,7 +33,7 @@
 + calendar_title : char형, 일정제목 및 내용
 + calendar_final : datetime형, 일정 기한
 + calendar_created : datetime형, 일정 생성일자
-+ calendar_author : char형, 일정 담당자
++ calendar_damdang : char형, 일정 담당자
 
 
 ----
