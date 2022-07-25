@@ -174,3 +174,11 @@
 
 + 회원가입 실패
 ![signup](./images/signup.png)
+
++ 공지사항 전체 조회
+![post](./images/post.png)
+
++ 공지사항 세부 조회
+![post detail](./images/post detail.png)
+
+
