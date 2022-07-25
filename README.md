@@ -179,6 +179,18 @@
 ![post](./images/post.png)
 
 + 공지사항 세부 조회
-![post detail](./images/post detail.png)
+![post detail](./images/post_detail.png)
+
++ 공지사항 수정
+![post put](./images/post_put.png)
+
++ 공지사항 삭제
+![post delete](./images/post_delete.png)
+
++ 일정관리 전체 조회
+![cal](./images/cal.png)
+
++ 일정관리 세부 조회
+![cal detail](./images/cal_detail.png)
 
 
