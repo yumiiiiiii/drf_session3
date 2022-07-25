@@ -171,5 +171,5 @@
 + 할 일 작성
 ![tood](./images/todo.png)
 
-+회원가입 실패
++ 회원가입 실패
 ![signup](./images/signup.png)
