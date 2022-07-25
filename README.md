@@ -91,3 +91,16 @@
 + 'todo/<int:pk>/' : 특정 할 일 조회, 수정, 삭제
 + 'todocomments/' : 전체 댓글 조회, 댓글 작성
 + 'todocommnets/<int:pk>/' : 특정 댓글 조회, 수정, 삭제
+
+---
+
+이미지 참고
+
++ 댓글 작성
+![todocomments](./images/comments.png)
+
++ 할 일 작성
+![tood](./images/todo.png)
+
++회원가입 실패
+![signup](./images/signup.png)
