@@ -160,3 +160,16 @@
 + 'post/<int:pk>/' : 공지글 세부 조회
 + 'cal/' : 일정 전체 조회
 + 'cal/<int:pk>/' : 일정 세부 
+
+---
+
+이미지 참고
+
++ 댓글 작성
+![todocomments](./images/comments.png)
+
++ 할 일 작성
+![tood](./images/todo.png)
+
++회원가입 실패
+![signup](./images/signup.png)
