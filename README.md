@@ -24,12 +24,14 @@
 
 ### 4. POST
 + id : int형, 고유값
++ Post_author : int형, 고유값
 + title : char형, 공지글 제목
 + content : text형, 공지글 본문
 + created : datetime형, 공지글 생성일자
 
 ### 5. Calendar
 + id : int형, 고유값
++ calender_author : int형, 고유값
 + calendar_title : char형, 일정제목 및 내용
 + calendar_final : datetime형, 일정 기한
 + calendar_created : datetime형, 일정 생성일자
@@ -69,7 +71,7 @@
 
 ### 7. PostCreateSerializer
 + 공지글 생성 serializer
-+ fields = ('title', 'content','created')
++ fields = ('title', 'content','created', 'author')
 
 ### 8. CalSimpleSerializer
 + 일정 전체 조회 serializer
@@ -81,7 +83,7 @@
 
 ### 10. CalCreateSerializer
 + 일정 생성 serializer
-+ fields = ('calendar_title','calendar_final', 'calendar_damdang', 'calendar_created')
++ fields = ('calendar_title','calendar_final', 'calendar_damdang', 'calendar_created', 'calender_author')
 ----
 
 ## APIView
